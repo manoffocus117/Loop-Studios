@@ -30,12 +30,6 @@ body {
       font-family: "Alata", sans-serif;
 }
 
-section {
-      width: 80rem;
-      height: 100%;
-      margin: 12.25rem auto;
-}
-
 a {
       text-decoration: none;
       color: inherit;

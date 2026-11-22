@@ -20,7 +20,9 @@
       </head>
       <body>
             <header id="navbar" class="navbar w-full mx-auto py-15">
-                  <nav class="w-7xl mx-auto flex items-center justify-between">
+                  <nav
+                        class="w-85 mx-5 md:w-7xl md:mx-auto flex items-center justify-between"
+                  >
                         <figure>
                               <a href="/">
                                     <svg
@@ -38,7 +40,7 @@
                               </a>
                         </figure>
                         <menu
-                              class="flex items-center justify-center gap-10 text-white"
+                              class="hidden md:flex items-center justify-center gap-10 text-white"
                         >
                               <a href="/">About</a>
                               <a href="/">Careers</a>
@@ -46,6 +48,9 @@
                               <a href="/">Products</a>
                               <a href="/">Support</a>
                         </menu>
+                        <button class="bg-green-500">
+                              <img src="/images/icon-close.svg" alt="" />
+                        </button>
                   </nav>
             </header>
             <main
@@ -54,26 +59,30 @@
                   <div class="absolute inset-0 z-10 bg-black/40"></div>
 
                   <div
-                        class="relative z-20 w-7xl mx-auto pt-20 grid grid-cols-2 items-center justify-center"
+                        class="relative z-20 w-full md:w-7xl mx-5 md:mx-auto pt-20 grid grid-cols-1 md:grid-cols-2 items-center justify-center"
                   >
                         <h1
-                              class="text-7xl text-white border-2 border-white p-10"
+                              class="text-4xl md:text-7xl text-white border-2 border-white p-10"
                         >
                               Immersive experiences that deliver
                         </h1>
                   </div>
             </main>
-            <section class="relative">
-                  <figure>
+            <section
+                  class="w-90 md:w-7xl mx-auto my-50 flex flex-col md:relative"
+            >
+                  <figure class="w-90 md:w-full">
                         <img
                               src="/images/desktop/image-interactive.jpg"
                               alt=""
                         />
                   </figure>
                   <div
-                        class="w-[56.7%] pt-25 pr-25 pl-25 absolute bottom-0 right-0 bg-white space-y-5"
+                        class="w-90 mx-auto md:mx-0 md:w-[56.7%] text-center md:text-justify p-8 md:pt-25 md:pr-25 md:pl-25 md:absolute bottom-0 right-0 bg-white space-y-5"
                   >
-                        <h1 class="text-5xl">The leader in interactive VR</h1>
+                        <h1 class="text-4xl md:text-5xl">
+                              The leader in interactive VR
+                        </h1>
                         <p class="text-gray-500 leading-8">
                               Founded in 2011, Loopstudios has been producing
                               world-class virtual reality projects for some of
@@ -84,18 +93,19 @@
                         </p>
                   </div>
             </section>
-            <section>
+            <section class="w-90 md:w-7xl mx-auto mb-25 md:mb-0">
                   <div class="flex items-center justify-between">
                         <h1 class="text-5xl">Our creations</h1>
                         <button
                               type="button"
-                              class="border-2 px-12 py-2 cursor-pointer hover:bg-black hover:text-white"
+                              class="hidden md:block border-2 px-12 py-2 cursor-pointer hover:bg-black hover:text-white"
                         >
                               See all
                         </button>
                   </div>
+                  <!-- desktop -->
                   <div
-                        class="grid grid-cols-4 gap-9.5 items-center justify-around my-25"
+                        class="hidden md:grid grid-cols-4 gap-9.5 items-center justify-around my-25"
                   >
                         <!-- Deep earth -->
                         <div class="relative">
@@ -218,14 +228,149 @@
                               </div>
                         </div>
                   </div>
+                  <!-- mobile -->
+                  <div class="grid md:hidden grid-cols-1 gap-9.5 my-25">
+                        <!-- Deep earth -->
+                        <div class="relative w-90 mx-auto">
+                              <figure class="w-full">
+                                    <img
+                                          src="/images/mobile/image-deep-earth.jpg"
+                                          alt=""
+                                          class="w-full object-cover"
+                                    />
+                              </figure>
+                              <div
+                                    class="w-full text-4xl text-white absolute bottom-0 p-8 bg-linear-to-b from-transparent to-black"
+                              >
+                                    <h2 class="w-40">Deep Earth</h2>
+                              </div>
+                        </div>
+                        <!-- Night arcade -->
+                        <div class="relative w-90 mx-auto">
+                              <figure class="w-full">
+                                    <img
+                                          src="/images/mobile/image-night-arcade.jpg"
+                                          alt=""
+                                          class="w-full object-cover"
+                                    />
+                              </figure>
+                              <div
+                                    class="w-full text-4xl text-white absolute bottom-0 p-10 bg-linear-to-b from-transparent to-black"
+                              >
+                                    <h2 class="w-60">Night arcade</h2>
+                              </div>
+                        </div>
+                        <!-- Soccer team -->
+                        <div class="relative w-90 mx-auto">
+                              <figure class="w-full">
+                                    <img
+                                          src="/images/mobile/image-soccer-team.jpg"
+                                          alt=""
+                                          class="w-full object-cover"
+                                    />
+                              </figure>
+                              <div
+                                    class="w-full text-4xl text-white absolute bottom-0 p-10 bg-linear-to-b from-transparent to-black"
+                              >
+                                    <h2 class="w-60">Soccer team VR</h2>
+                              </div>
+                        </div>
+                        <!-- The grid -->
+                        <div class="relative w-90 mx-auto">
+                              <figure class="w-full">
+                                    <img
+                                          src="/images/mobile/image-grid.jpg"
+                                          alt=""
+                                          class="w-full object-cover"
+                                    />
+                              </figure>
+                              <div
+                                    class="w-full text-4xl text-white absolute bottom-0 p-10 bg-linear-to-b from-transparent to-black"
+                              >
+                                    <h2 class="w-40">The Grid</h2>
+                              </div>
+                        </div>
+                        <!-- From up above VR -->
+                        <div class="relative w-90 mx-auto">
+                              <figure class="w-full">
+                                    <img
+                                          src="/images/mobile/image-from-above.jpg"
+                                          alt=""
+                                          class="w-full object-cover"
+                                    />
+                              </figure>
+                              <div
+                                    class="w-full text-4xl text-white absolute bottom-0 p-10 bg-linear-to-b from-transparent to-black"
+                              >
+                                    <h2 class="w-60">From up above VR</h2>
+                              </div>
+                        </div>
+                        <!-- Pocket borealis -->
+                        <div class="relative w-90 mx-auto">
+                              <figure class="w-full">
+                                    <img
+                                          src="/images/mobile/image-pocket-borealis.jpg"
+                                          alt=""
+                                          class="w-full object-cover"
+                                    />
+                              </figure>
+                              <div
+                                    class="w-full text-4xl text-white absolute bottom-0 p-10 bg-linear-to-b from-transparent to-black"
+                              >
+                                    <h2 class="w-60">Pocket borealis</h2>
+                              </div>
+                        </div>
+                        <!-- The curiosity -->
+                        <div class="relative w-90 mx-auto">
+                              <figure class="w-full">
+                                    <img
+                                          src="/images/mobile/image-curiosity.jpg"
+                                          alt=""
+                                          class="w-full object-cover"
+                                    />
+                              </figure>
+                              <div
+                                    class="w-full text-4xl text-white absolute bottom-0 p-10 bg-linear-to-b from-transparent to-black"
+                              >
+                                    <h2 class="w-60">The curiosity</h2>
+                              </div>
+                        </div>
+                        <!-- Make it fisheye -->
+                        <div class="relative w-90 mx-auto">
+                              <figure class="w-full">
+                                    <img
+                                          src="/images/mobile/image-fisheye.jpg"
+                                          alt=""
+                                          class="w-full object-cover"
+                                    />
+                              </figure>
+                              <div
+                                    class="w-full text-4xl text-white absolute bottom-0 p-10 bg-linear-to-b from-transparent to-black"
+                              >
+                                    <h2 class="w-60">Make it fisheye</h2>
+                              </div>
+                        </div>
+                  </div>
+                  <button
+                        type="button"
+                        class="block md:hidden border-2 px-12 py-2 cursor-pointer hover:bg-black hover:text-white"
+                  >
+                        See all
+                  </button>
             </section>
             <footer class="bg-black py-15">
-                  <div class="w-7xl mx-auto flex items-start justify-between">
-                        <div class="flex flex-col items-start gap-5">
+                  <div
+                        class="w-90 md:w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-15"
+                  >
+                        <div
+                              class="flex flex-col items-center md:items-start justify-center gap-5"
+                        >
                               <figure>
                                     <img src="/images/logo.svg" alt="" />
                               </figure>
-                              <ul class="text-white space-x-10 footer-menu">
+                              <ul
+                                    class="flex flex-col md:flex-row text-center gap-5 text-white md:space-x-10 footer-menu"
+                              >
                                     <a href="/">About</a>
                                     <a href="/">Careers</a>
                                     <a href="/">Events</a>
@@ -233,7 +378,9 @@
                                     <a href="/">Support</a>
                               </ul>
                         </div>
-                        <div class="flex flex-col items-end gap-5">
+                        <div
+                              class="flex flex-col items-center md:items-end gap-5"
+                        >
                               <div class="flex items-center gap-5 social">
                                     <a href="#">
                                           <img
