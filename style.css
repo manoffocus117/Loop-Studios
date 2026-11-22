@@ -100,6 +100,44 @@ main {
       height: 100vh;
 }
 
+a {
+      position: relative;
+}
+
+menu a:hover::after {
+      content: "";
+      width: 50%;
+      height: 2px;
+      position: absolute;
+      bottom: -10px;
+      left: 25%;
+      background-color: var(--white);
+}
+
+.footer-menu a:hover::after {
+      content: "";
+      width: 50%;
+      height: 2px;
+      position: absolute;
+      bottom: -10px;
+      left: 25%;
+      background-color: var(--white);
+}
+
+.social {
+      position: relative;
+}
+
+.social a:hover::after {
+      content: "";
+      width: 75%;
+      height: 2px;
+      position: absolute;
+      bottom: -10px;
+      left: 15%;
+      background-color: var(--white);
+}
+
 .attribution {
       font-size: 0.9rem;
       text-align: center;
