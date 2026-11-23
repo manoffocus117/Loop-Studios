@@ -108,6 +108,14 @@ menu a:hover::after {
       background-color: var(--white);
 }
 
+.active {
+      display: block;
+}
+
+.hidden {
+      display: none;
+}
+
 .footer-menu a:hover::after {
       content: "";
       width: 50%;

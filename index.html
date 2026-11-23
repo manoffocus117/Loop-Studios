@@ -20,8 +20,10 @@
       </head>
       <body>
             <header id="navbar" class="navbar w-full mx-auto py-15">
+                  <!-- desktop menu -->
                   <nav
-                        class="w-85 mx-5 md:w-7xl md:mx-auto flex items-center justify-between"
+                        id="desktop-menu"
+                        class="w-85 md:w-7xl mx-auto flex items-center justify-between"
                   >
                         <figure>
                               <a href="/">
@@ -40,7 +42,7 @@
                               </a>
                         </figure>
                         <menu
-                              class="hidden md:flex items-center justify-center gap-10 text-white"
+                              class="hidden md:flex! items-center justify-center gap-10 text-white"
                         >
                               <a href="/">About</a>
                               <a href="/">Careers</a>
@@ -48,9 +50,53 @@
                               <a href="/">Products</a>
                               <a href="/">Support</a>
                         </menu>
-                        <button class="bg-green-500">
-                              <img src="/images/icon-close.svg" alt="" />
+                        <button
+                              id="open-menu"
+                              class="block md:hidden cursor-pointer"
+                        >
+                              <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="16"
+                              >
+                                    <g fill-rule="evenodd">
+                                          <path
+                                                id="hamburger-icon"
+                                                fill="#FFF"
+                                                d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"
+                                          />
+                                    </g>
+                              </svg>
                         </button>
+                  </nav>
+                  <nav
+                        id="mobile-menu"
+                        class="md:hidden bg-black h-[125vh] -mt-25 py-25 z-30 hidden"
+                  >
+                        <div
+                              class="w-85 mx-auto flex items-center justify-between"
+                        >
+                              <figure>
+                                    <a href="/">
+                                          <img
+                                                src="/images/logo.svg"
+                                                alt="loop studios logo"
+                                          />
+                                    </a>
+                              </figure>
+                              <button id="close-menu" class="cursor-pointer">
+                                    <img src="/images/icon-close.svg" alt="" />
+                              </button>
+                        </div>
+                        <menu
+                              class="w-85 mx-auto pt-25 pb-50 flex flex-col items-start justify-center gap-5 text-3xl font-light uppercase text-white"
+                        >
+                              <a href="/">About</a>
+                              <a href="/">Careers</a>
+                              <a href="/">Events</a>
+                              <a href="/">Products</a>
+                              <a href="/">Support</a>
+                        </menu>
                   </nav>
             </header>
             <main
